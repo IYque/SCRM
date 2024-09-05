@@ -1,0 +1,36 @@
+server:
+  port: 8085
+iyque:
+  userName: iyque
+  pwd: 123456
+  demo: false
+  fileViewUrl: https://iyque.cn/qapi/file/fileView/ #文件统一访问前缀，后端api指向 FileController.readFile
+  uploadDir: ./upload
+spring:
+  h2:
+    console:
+      path: /h2  #h2嵌入式数据库控制台，可以通过浏览器访问
+      enabled: true
+  datasource:
+    url: jdbc:h2:file:./data/mydb;
+    username: sa
+    password: 123456
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    generate-ddl: true
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  jackson:
+    time-zone: Asia/Shanghai
+    serialization:
+      fail-on-empty-beans: false
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB

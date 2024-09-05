@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/static/logo.png">
+  <title>源雀Scrm-是基于Java源码交付的企微SCRM,帮助企业构建高度自由安全的私域平台。:https://www.iyque.cn</title>
+  <style>
+    #loader-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2001;
+    }
+
+    .cube {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 180px;
+      height: 180px;
+      transform: translateZ(100px);
+      transform-style: preserve-3d;
+      height: 100vh;
+    }
+
+    .cube__side {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border: 2px solid black;
+      background: rgba(148, 82, 254, 0.364);
+
+    }
+
+    .cube__side--front {
+      transform: rotateY(0deg) translateZ(80px);
+    }
+
+    .cube__side--right {
+      transform: rotateY(90deg) translateZ(80px);
+    }
+
+    .cube__side--back {
+      transform: rotateY(180deg) translateZ(80px);
+    }
+
+    .cube__side--left {
+      transform: rotateY(-90deg) translateZ(80px);
+    }
+
+    .cube__side--top {
+      transform: rotateX(90deg) translateZ(80px);
+    }
+
+    .cube__side--bottom {
+      transform: rotateX(-90deg) translateZ(80px);
+    }
+
+    .cube.spin {
+      animation: spinning 3s infinite ease-in-out;
+    }
+
+    .cube--base {
+      margin: 0 auto;
+    }
+
+    @keyframes spinning {
+      0% {
+        transform: translateZ(180px) rotateX(0deg) rotateY(0deg);
+      }
+
+      100% {
+        transform: translateZ(180px) rotateX(360deg) rotateY(360deg);
+      }
+    }
+
+    .loaded#loader-wrapper {
+      opacity: 0;
+      transition: all 0.15s ease-out;
+      z-index: -1;
+    }
+
+    #common-top-right {
+      position: fixed;
+      right: 20px;
+      top: 24px;
+      z-index: 10;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app"></div>
+  <div id="common-top-right"></div>
+
+  <div id="loader-wrapper">
+    <div class="cube cube--base spin">
+      <div class="cube__side cube__side--front">
+      </div>
+      <div class="cube__side cube__side--back">
+      </div>
+      <div class="cube__side cube__side--right">
+      </div>
+      <div class="cube__side cube__side--left">
+      </div>
+      <div class="cube__side cube__side--top">
+      </div>
+      <div class="cube__side cube__side--bottom">
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

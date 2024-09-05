@@ -1,0 +1,456 @@
+/**
+ * 通用css样式布局处理
+ */
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	scroll-behavior: inherit;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+	font-size: 14px;
+	line-height: 1.15;
+	color: #333;
+}
+
+body {
+	height: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+li {
+	list-style: none;
+}
+
+button + button {
+	margin-left: 12px;
+}
+
+/** 原子类 **/
+
+/* flex */
+.flex {
+	display: flex !important;
+}
+.fxauto {
+	flex: auto !important;
+}
+.fxnone {
+	flex: none !important;
+}
+.ais {
+	display: flex;
+	align-items: stretch !important;
+}
+.ait {
+	display: flex;
+	align-items: flex-start !important;
+}
+.aic {
+	display: flex;
+	align-items: center !important;
+}
+.flwrap {
+	display: flex;
+	flex-flow: wrap !important;
+}
+.fxbw {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.fcbw {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.fxcol {
+	display: flex;
+	flex-direction: column !important;
+}
+.gap10 {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: baseline;
+	gap: 10px;
+}
+.gap5 {
+	gap: 5px !important;
+}
+.gap15 {
+	gap: 15px !important;
+}
+.gap20 {
+	gap: 20px !important;
+}
+
+/* align */
+.fl {
+	float: left;
+	position: relative;
+}
+.fr {
+	float: right;
+	position: relative;
+}
+.al {
+	text-align: left !important;
+}
+.ac {
+	text-align: center !important;
+}
+.ar {
+	text-align: right !important;
+}
+
+.sticky-t {
+	position: sticky !important;
+	top: 0;
+	z-index: 9;
+}
+.sticky-b {
+	position: sticky !important;
+	bottom: 0;
+}
+
+.pt0 {
+	margin-top: 0 !important;
+}
+.pr0 {
+	margin-right: 0 !important;
+}
+.pb0 {
+	margin-bottom: 0 !important;
+}
+.pl0 {
+	margin-left: 0 !important;
+}
+
+/* padding 5px series */
+.pt5 {
+	padding-top: 5px !important;
+}
+.pr5 {
+	padding-right: 5px !important;
+}
+.pb5 {
+	padding-bottom: 5px !important;
+}
+.pl5 {
+	padding-left: 5px !important;
+}
+.pad5 {
+	padding: 5px !important;
+}
+
+/* padding 10px series */
+.pt10 {
+	padding-top: 10px !important;
+}
+.pr10 {
+	padding-right: 10px !important;
+}
+.pb10 {
+	padding-bottom: 10px !important;
+}
+.pl10 {
+	padding-left: 10px !important;
+}
+.pad10 {
+	padding: 10px !important;
+}
+
+/* padding 20px series */
+.pt20 {
+	padding-top: 20px !important;
+}
+.pr20 {
+	padding-right: 20px !important;
+}
+.pb20 {
+	padding-bottom: 20px !important;
+}
+.pl20 {
+	padding-left: 20px !important;
+}
+.pad20 {
+	padding: 20px !important;
+}
+
+.mt0 {
+	margin-top: 0 !important;
+}
+.mr0 {
+	margin-right: 0 !important;
+}
+.mb0 {
+	margin-bottom: 0 !important;
+}
+.ml0 {
+	margin-left: 0 !important;
+}
+
+/* margin 5px series */
+.mt5 {
+	margin-top: 5px !important;
+}
+.mr5 {
+	margin-right: 5px !important;
+}
+.mb5 {
+	margin-bottom: 5px !important;
+}
+.ml5 {
+	margin-left: 5px !important;
+}
+.mar5 {
+	margin: 5px !important;
+}
+
+/* margin 10px series */
+.mt10 {
+	margin-top: 10px !important;
+}
+.mr10 {
+	margin-right: 10px !important;
+}
+.mb10 {
+	margin-bottom: 10px !important;
+}
+.ml10 {
+	margin-left: 10px !important;
+}
+.mar10 {
+	margin: 10px !important;
+}
+
+/* margin 15px series */
+.mt15 {
+	margin-top: 15px !important;
+}
+.mr15 {
+	margin-right: 15px !important;
+}
+.mb15 {
+	margin-bottom: 15px !important;
+}
+.ml15 {
+	margin-left: 15px !important;
+}
+.ml15 {
+	margin-left: 15px !important;
+}
+
+/* margin 20px series */
+.mt20 {
+	margin-top: 20px !important;
+}
+.mr20 {
+	margin-right: 20px !important;
+}
+.mb20 {
+	margin-bottom: 20px !important;
+}
+.ml20 {
+	margin-left: 20px !important;
+}
+.mar20 {
+	margin: 20px !important;
+}
+
+.font14 {
+	font-size: 20px !important;
+}
+.font16 {
+	font-size: 20px !important;
+}
+.font16 {
+	font-size: 16px !important;
+}
+.font18 {
+	font-size: 18px !important;
+}
+.font20 {
+	font-size: 20px !important;
+}
+
+/* . */
+.cp {
+	cursor: pointer !important;
+}
+
+.lh1 {
+	line-height: 1 !important;
+}
+
+.hide {
+	display: none !important;
+}
+
+.bgw {
+	background: white !important;
+}
+
+.bgnone {
+	background: none !important;
+}
+
+.overhide {
+	overflow: hidden !important;
+}
+.overauto {
+	overflow: auto !important;
+}
+
+.blod {
+	font-weight: bold !important;
+}
+
+.h100 {
+	height: 100% !important;
+}
+
+.block {
+	display: block !important;
+}
+
+/* bfc模型 / 闭合清楚浮动 */
+.bfc-o {
+	overflow: hidden;
+	position: relative;
+}
+.bfc-d {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+.bfc-p {
+	position: absolute;
+}
+
+/* fixed */
+.tf,
+.bf {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	height: 50px;
+	z-index: 999;
+}
+.tf {
+	top: 0;
+}
+.bf {
+	bottom: 0;
+}
+
+/* mask */
+.mask {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(39, 39, 39, 0.76);
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 9;
+}
+
+/* 上下左右居中 */
+.cc {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: auto;
+}
+
+/* 单行文字溢出省略号 */
+.toe {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.sticky-padding {
+	--bg: var(--bg-white);
+	--pad: var(--card-margin);
+	background: var(--bg);
+	padding: 0 var(--pad);
+	overflow: auto;
+}
+.sticky-padding::before,
+.sticky-padding::after {
+	content: '';
+	display: block;
+	position: sticky;
+	height: var(--pad);
+	background: var(--bg);
+}
+.sticky-padding::before {
+	top: 0;
+}
+.sticky-padding::after {
+	bottom: 0;
+}
+
+/* pc端主体显示宽度区域 */
+.main-size {
+	min-width: 1366px;
+}
+
+/* 暗黑模式 Dark mode */
+/* @media (prefers-color-scheme: dark) {
+   body,
+   img,
+   video {
+     filter: invert(1) brightness(1.5) hue-rotate(180deg);
+   }
+
+   不使用暗黑模式
+   .no-dark {
+     position: relative;
+   }
+   .no-dark::before {
+     content: ' ';
+     position: absolute;
+     display: block;
+     height: 100%;
+     width: 100%;
+     backdrop-filter: invert(1) brightness(1.5) hue-rotate(180deg);
+   }
+ } */
