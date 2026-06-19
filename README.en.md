@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# YuanQue SCRM
+# yjaiscrm SCRM
 
 **100% Open-Source Private Domain Marketing Solution**
 
@@ -10,8 +10,8 @@ Based on WeCom (Enterprise WeChat) · Ready to Use · Fully Customizable · Priv
 
 [简体中文](./README.md) | English
 
-[![star](https://gitee.com/iyque/iYqueCode/badge/star.svg?theme=dark)](https://gitee.com/iyque/iYqueCode/stargazers)
-[![fork](https://gitee.com/iyque/iYqueCode/badge/fork.svg?theme=dark)](https://gitee.com/iyque/iYqueCode/members)
+[![star](https://gitee.com/yjaiscrm/yjaiscrmCode/badge/star.svg?theme=dark)](https://gitee.com/yjaiscrm/yjaiscrmCode/stargazers)
+[![fork](https://gitee.com/yjaiscrm/yjaiscrmCode/badge/fork.svg?theme=dark)](https://gitee.com/yjaiscrm/yjaiscrmCode/members)
 [![AI Dev: OpenWecomSkills](https://img.shields.io/badge/AI_Dev-OpenWecomSkills-14b8a6?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0tMSAxNS41di0zSDguNUwxMyA3LjV2M0gxNS41TDExIDE3LjV6Ii8+PC9zdmc+)](https://gitee.com/omni-soc-kit/open-wecom-skills)
 
 </div>
@@ -22,16 +22,16 @@ Based on WeCom (Enterprise WeChat) · Ready to Use · Fully Customizable · Priv
 
 | Resource | Link |
 |----------|------|
-| 🌐 Website | [iyuanque.cn](https://iyuanque.cn) |
-| 📖 Deployment Docs | [iyuanque.cn/docs](https://ucnqq6fany8u.feishu.cn/wiki/OgVfwtC6Sivqjvk85GGcYfVjnyg) |
-| 📋 Commercial Features | [iyuanque.cn/feature/sy](https://ucnqq6fany8u.feishu.cn/wiki/GItuwa59qiCMlLkRADpc8dxynIe) |
-| 🔄 Open Source vs Commercial | [iyuanque.cn/open-source](https://iyuanque.cn/open-source) |
+| 🌐 Website | [yjaiscrm.cn](https://yjaiscrm.cn) |
+| 📖 Deployment Docs | [yjaiscrm.cn/docs](https://ucnqq6fany8u.feishu.cn/wiki/OgVfwtC6Sivqjvk85GGcYfVjnyg) |
+| 📋 Commercial Features | [yjaiscrm.cn/feature/sy](https://ucnqq6fany8u.feishu.cn/wiki/GItuwa59qiCMlLkRADpc8dxynIe) |
+| 🔄 Open Source vs Commercial | [yjaiscrm.cn/open-source](https://yjaiscrm.cn/open-source) |
 
 ---
 
 ## 💡 About
 
-YuanQue SCRM is a **100% open-source** private domain marketing solution based on WeCom (Enterprise WeChat). It provides a complete **"Acquisition → Management → Operations → Marketing → Service → Analytics"** pipeline for enterprise private domain marketing.
+yjaiscrm SCRM is a **100% open-source** private domain marketing solution based on WeCom (Enterprise WeChat). It provides a complete **"Acquisition → Management → Operations → Marketing → Service → Analytics"** pipeline for enterprise private domain marketing.
 
 ### Core Advantages
 
@@ -83,7 +83,7 @@ YuanQue SCRM is a **100% open-source** private domain marketing solution based o
 
 ### Open WeCom Skills — WeCom AI Development Knowledge Base
 
-When doing **custom development** or **API integration** with YuanQue SCRM, we recommend using Open WeCom Skills — a structured knowledge system optimized for AI-assisted WeCom development.
+When doing **custom development** or **API integration** with yjaiscrm SCRM, we recommend using Open WeCom Skills — a structured knowledge system optimized for AI-assisted WeCom development.
 
 | Dimension | Details |
 |-----------|---------|

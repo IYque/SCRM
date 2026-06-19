@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# 源雀 SCRM
+# yjaiscrm SCRM
 
 **源码 100% 开放的私域数智化营销解决方案**
 
@@ -10,11 +10,11 @@
 
 [English](./README.en.md) | 简体中文
 
-[![star](https://gitee.com/iyque/iYqueCode/badge/star.svg?theme=dark)](https://gitee.com/iyque/iYqueCode/stargazers)
-[![fork](https://gitee.com/iyque/iYqueCode/badge/fork.svg?theme=dark)](https://gitee.com/iyque/iYqueCode/members)
-![star](https://gitcode.com/iyque/iYque/star/badge.svg)
+[![star](https://gitee.com/yjaiscrm/yjaiscrmCode/badge/star.svg?theme=dark)](https://gitee.com/yjaiscrm/yjaiscrmCode/stargazers)
+[![fork](https://gitee.com/yjaiscrm/yjaiscrmCode/badge/fork.svg?theme=dark)](https://gitee.com/yjaiscrm/yjaiscrmCode/members)
+![star](https://gitcode.com/yjaiscrm/yjaiscrm/star/badge.svg)
 ![star](https://atomgit.com/godothub/konado/star/2025top.svg)
-[![AtomGit：2025年度 G-Star 开源项目](https://img.shields.io/badge/AtomGit-2025年度_G--Star_开源项目-f59e0b?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0xMiAxNy4yN0wxOC4xOCAyMWwtMS42NC03LjAzTDIyIDkuMjRsLTcuMTktLjYxTDEyIDIgOS4xOSA4LjYzIDIgOS4yNGw1LjQ2IDQuNzNMNS44MiAyMXoiLz48L3N2Zz4=)](https://gitcode.com/iyque/iYque)
+[![AtomGit：2025年度 G-Star 开源项目](https://img.shields.io/badge/AtomGit-2025年度_G--Star_开源项目-f59e0b?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0xMiAxNy4yN0wxOC4xOCAyMWwtMS42NC03LjAzTDIyIDkuMjRsLTcuMTktLjYxTDEyIDIgOS4xOSA4LjYzIDIgOS4yNGw1LjQ2IDQuNzNMNS44MiAyMXoiLz48L3N2Zz4=)](https://gitcode.com/yjaiscrm/yjaiscrm)
 [![AI 开发：OpenWecomSkills](https://img.shields.io/badge/AI_开发-OpenWecomSkills-14b8a6?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0tMSAxNS41di0zSDguNUwxMyA3LjV2M0gxNS41TDExIDE3LjV6Ii8+PC9zdmc+)](https://gitee.com/omni-soc-kit/open-wecom-skills)
 
 </div>
@@ -25,10 +25,10 @@
 
 | 资源 | 链接 |
 |------|------|
-| 🌐 官网 | [iyuanque.cn](https://iyuanque.cn) 或 [iyque.cn](https://iyque.cn) |
-| 📖 开源部署文档 | [iyuanque.cn/docs](https://ucnqq6fany8u.feishu.cn/wiki/OgVfwtC6Sivqjvk85GGcYfVjnyg) |
-| 📋 商业版功能清单 | [iyuanque.cn/feature/sy](https://ucnqq6fany8u.feishu.cn/wiki/GItuwa59qiCMlLkRADpc8dxynIe) |
-| 🔄 开源版 vs 商业版 | [iyuanque.cn/open-source](https://iyuanque.cn/open-source) |
+| 🌐 官网 | [yjaiscrm.cn](https://yjaiscrm.cn) 或 [yjaiscrm.cn](https://yjaiscrm.cn) |
+| 📖 开源部署文档 | [yjaiscrm.cn/docs](https://ucnqq6fany8u.feishu.cn/wiki/OgVfwtC6Sivqjvk85GGcYfVjnyg) |
+| 📋 商业版功能清单 | [yjaiscrm.cn/feature/sy](https://ucnqq6fany8u.feishu.cn/wiki/GItuwa59qiCMlLkRADpc8dxynIe) |
+| 🔄 开源版 vs 商业版 | [yjaiscrm.cn/open-source](https://yjaiscrm.cn/open-source) |
 
 > 💡 **商业版演示系统**请联系客服获取。开源版暂不提供演示，代码已完全开源可自行部署。
 
@@ -44,7 +44,7 @@
 - SaaS 模式与业务脱节，拓展性有限
 - 数据安全、隐私保护及合规存在隐患
 
-**源雀 SCRM** 基于源码 100% 开放的交付策略，打通 **"运营、营销、服务三位一体化"** 链路，搭建从全域潜客端到企业私域端的营销新模式，实现 **"开箱即用、自由定制、私有部署、持续服务"** 四大建设目标。
+**yjaiscrm SCRM** 基于源码 100% 开放的交付策略，打通 **"运营、营销、服务三位一体化"** 链路，搭建从全域潜客端到企业私域端的营销新模式，实现 **"开箱即用、自由定制、私有部署、持续服务"** 四大建设目标。
 
 ![系统概览](pic/2.png)
 
@@ -52,7 +52,7 @@
 
 ## 🏗️ 系统架构
 
-源雀 SCRM 基于 **"拓客 → 管理 → 运营 → 营销 → 服务 → 分析"** 全链路，实现一站式私域数智化营销：
+yjaiscrm SCRM 基于 **"拓客 → 管理 → 运营 → 营销 → 服务 → 分析"** 全链路，实现一站式私域数智化营销：
 
 | 链路 | 能力 |
 |------|------|
@@ -201,7 +201,7 @@
 
 ### Open WeCom Skills — 企微 AI 开发知识库
 
-在使用源雀 SCRM 进行 **二次开发** 或 **企微 API 对接** 时，推荐配合 Open WeCom Skills —— 一套为 AI 大模型优化的企微开发结构化知识体系。
+在使用yjaiscrm SCRM 进行 **二次开发** 或 **企微 API 对接** 时，推荐配合 Open WeCom Skills —— 一套为 AI 大模型优化的企微开发结构化知识体系。
 
 | 维度 | 说明 |
 |------|------|
@@ -247,12 +247,12 @@
 
 ## 📞 联系我们
 
-如有包括但不限于以下需求，可随时通过源雀官方企微联系我们：
+如有包括但不限于以下需求，可随时通过yjaiscrm官方企微联系我们：
 
 - 开源项目技术答疑
-- 获取源雀 SCRM 完整体验系统
-- 源雀 SCRM 商务合作
-- 源雀 SCRM 产品交流
+- 获取yjaiscrm SCRM 完整体验系统
+- yjaiscrm SCRM 商务合作
+- yjaiscrm SCRM 产品交流
 - 更多咨询或服务…
 
 ![联系我们](pic/contactus.png)
