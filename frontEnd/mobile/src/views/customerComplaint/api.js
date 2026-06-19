@@ -1,6 +1,6 @@
 import request from '@/utils/request'
 const { get, post, put, del: _del } = request
-const serve = '/iYqueComplaint'
+const serve = '/yjaiscrmComplaint'
 
 /**
  * 列表
@@ -15,7 +15,7 @@ export function getList(data) {
   return get(`${serve}/findComplaintByPage`, data)
 }
 
-export const getDetail = (id) => get(`${serve}/findIYQueComplainById/${id}`)
+export const getDetail = (id) => get(`${serve}/findYjaiscrmComplainById/${id}`)
 
 /**
  * 处理投诉意见

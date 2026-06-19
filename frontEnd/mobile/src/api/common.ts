@@ -17,7 +17,7 @@ export function getCosConfig(data) {
     url: '/file/get/config',
     params: data,
   }).then(({ data }) => {
-    let res = {}
+    const res = {}
     Object.keys(data).forEach((key) => {
       res[key] = decryptAES(data[key])
     })
@@ -28,7 +28,7 @@ export function getCosConfig(data) {
 // 获取临时素材media_id
 export function getMaterialMediaId(params) {
   return request({
-    url: '/iYqueSys/uploadMediaId',
+    url: '/yjaiscrmSys/uploadMediaId',
     params,
   })
 }
@@ -39,7 +39,7 @@ export function getMaterialMediaId(params) {
  */
 export function getAgentTicket(url) {
   return request({
-    url: '/iYqueSys/getAgentTicket',
+    url: '/yjaiscrmSys/getAgentTicket',
     params: {
       url,
     },
@@ -75,7 +75,7 @@ export function getWxTicket(data) {
  */
 export function login(authCode) {
   return request({
-    url: '/iYqueSys/weComLogin',
+    url: '/yjaiscrmSys/weComLogin',
     method: 'get',
     params: {
       authCode,
@@ -88,7 +88,7 @@ export function login(authCode) {
  */
 export function getUserInfo() {
   return request({
-    url: '/iYqueSys/getBaseInfo',
+    url: '/yjaiscrmSys/getBaseInfo',
   })
 }
 
@@ -114,7 +114,7 @@ export function getWxRedirect(redirectUrl = location.href) {
  */
 export function getWcRedirect(redirectUrl = location.href) {
   return request({
-    url: '/iYqueSys/weComRedirect',
+    url: '/yjaiscrmSys/weComRedirect',
     method: 'get',
     params: {
       redirectUrl,

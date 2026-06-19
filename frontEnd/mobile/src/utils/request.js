@@ -54,7 +54,7 @@ function requestFactory(getway = '') {
       // }
       else {
         closeToast()
-        if (process.env.NODE_ENV === 'development' || location.href.includes('show.iyque.cn')) {
+        if (process.env.NODE_ENV === 'development' || location.href.includes('show.yjaiscrm.cn')) {
           showDialog({
             title: '接口提示',
             message: `${res.config.url}, ${data.code} @_@: ${data.msg}`,

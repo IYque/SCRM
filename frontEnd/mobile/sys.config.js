@@ -8,9 +8,9 @@ const envs = {
     BASE_API: 'http://127.0.0.1:8085', // 接口基础路径
   },
   production: {
-    DOMAIN: 'https://iyque.cn',
+    DOMAIN: 'https://yjaiscrm.cn',
     BASE_URL: '/openmobile/',
-    BASE_API: 'https://iyque.cn/iyque',
+    BASE_API: 'https://yjaiscrm.cn/yjaiscrm',
   },
 }
 
@@ -26,6 +26,6 @@ const env = envs[mode] || {}
 // 配置项
 export const config = {
   ...env,
-  SYSTEM_NAME: '源雀', // 系统简称
+  SYSTEM_NAME: 'yjaiscrm', // 系统简称
 }
 Object.assign(config, { BASE_URL, RUN_ENV: mode })

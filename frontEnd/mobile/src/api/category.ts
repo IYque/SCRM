@@ -5,7 +5,7 @@ const service = '/category'
 
 /** 列表
  */
-export const getList = (mediaType) => get(`${service}/findIYqueCategory`, { mediaType })
+export const getList = (mediaType) => get(`${service}/findYjaiscrmCategory`, { mediaType })
 
 /** 详情
  * @param {*} params
