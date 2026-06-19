@@ -15,7 +15,7 @@ export default {
 				beginTime: '',
 				endTime: '',
 				workCycle: [],
-				weclomeMsg: '欢迎使用源雀scrm👉http://iyque.cn',
+				weclomeMsg: '欢迎使用yjaiscrm scrm👉http://yjaiscrm.cn',
 			},
 			rules: {
 				weclomeMsg: [{ required: true, message: '必填项', trigger: 'blur' }],

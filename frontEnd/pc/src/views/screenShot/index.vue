@@ -102,7 +102,7 @@ export default {
 				.submit()
 				.then(() => {
 					this.dialogVisible = false
-					return this.findIYqueMsgRules()
+					return this.findYjaiscrmMsgRules()
 				})
 				.catch((e) => console.error(e))
 				.finally(() => (this.loading = false))
@@ -155,9 +155,9 @@ export default {
 <template>
 	<div>
 		<div class="warning">
-			<a href="https://www.iyque.cn?utm_source=iyquecode" target="_blank">
+			<a href="https://www.yjaiscrm.cn?utm_source=yjaiscrmcode" target="_blank">
 				<strong>
-					源雀Scrm-是基于Java源码交付的企微SCRM,帮助企业构建高度自由安全的私域平台。:https://www.iyque.cn/
+					yjaiscrm Scrm-是基于Java源码交付的企微SCRM,帮助企业构建高度自由安全的私域平台。:https://www.yjaiscrm.cn/
 				</strong>
 			</a>
 		</div>

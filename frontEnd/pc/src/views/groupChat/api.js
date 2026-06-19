@@ -1,7 +1,7 @@
 import request from '@/utils/request'
 const { get, post, put, delt } = request
-const serve = '/iYqueChat'
-const tagService = '/iYqueTag'
+const serve = '/yjaiscrmChat'
+const tagService = '/yjaiscrmTag'
 
 /**
  * 列表
@@ -12,7 +12,7 @@ const tagService = '/iYqueTag'
   type:''
  }
  */
-export const getList = (data) => get(`${serve}/findIYqueChatPage`, data)
+export const getList = (data) => get(`${serve}/findYjaiscrmChatPage`, data)
 
 
 
@@ -20,13 +20,13 @@ export const getList = (data) => get(`${serve}/findIYqueChatPage`, data)
  * 客群同步
  * @returns 
  */
-export const synchIyqueChat = () => post(`${serve}/synchIyqueChat`)
+export const synchYjaiscrmChat = () => post(`${serve}/synchYjaiscrmChat`)
 
 /**
  * 获取客群标签列表
  * @returns
  */
-export const getGroupTags = (data) => get(`${tagService}/findIYqueTag`, { ...data, groupTagType: 2 })
+export const getGroupTags = (data) => get(`${tagService}/findYjaiscrmTag`, { ...data, groupTagType: 2 })
 
 /**
  * 为客群打标签

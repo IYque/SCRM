@@ -1,6 +1,6 @@
 import request from '@/utils/request'
 const { get, post, put, delt } = request
-const serve = '/iYqueTag'
+const serve = '/yjaiscrmTag'
 
 /**
  * 列表
@@ -8,7 +8,7 @@ const serve = '/iYqueTag'
  */
 export const getList = (data) => {
   // 添加标签分组类型(1:客户企业标签;2:客群标签)
-  return get(`${serve}/findIYqueTagGroups`, { ...data, groupTagType: 1 })
+  return get(`${serve}/findYjaiscrmTagGroups`, { ...data, groupTagType: 1 })
 }
 // 详情
 export const getDetail = (id) => get(`${serve}/getKeyWordGroupBaseInfo/${id}`)

@@ -27,7 +27,7 @@ export const findAiAnalysisMsgAudits = (data) => get(`${serve}/findAiAnalysisMsg
  * @param {*} data 
  * @returns 
  */
-export const findIYqueMsgRules = (data) => get(`${serve}/findIYqueMsgRules`, data)
+export const findYjaiscrmMsgRules = (data) => get(`${serve}/findYjaiscrmMsgRules`, data)
 
 
 

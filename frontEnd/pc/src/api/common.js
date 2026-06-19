@@ -4,7 +4,7 @@ const { get, post, put, delt } = request
 export const upload = (data) => post(`/file/upload`, data)
 
 export const getUserList = (data) =>
-	get(`/iYqueUser/findIYqueUser`, data).then((res) => {
+	get(`/yjaiscrmUser/findYjaiscrmUser`, data).then((res) => {
 		if (res.code == 200) {
 			res.data?.forEach((element) => {
 				element.id = element.userId
@@ -13,10 +13,10 @@ export const getUserList = (data) =>
 		return res
 	})
 
-export const getTagList = (data) => get(`/iYqueTag/findIYqueTag`, data)
+export const getTagList = (data) => get(`/yjaiscrmTag/findYjaiscrmTag`, data)
 
 export function getRemarkList() {
 	return request({
-		url: '/iYqueCommon/findRemarksType',
+		url: '/yjaiscrmCommon/findRemarksType',
 	})
 }

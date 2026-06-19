@@ -5,12 +5,12 @@ import { env } from '../../../sys.config'
 import aev from './aev.vue'
 import synch from './synch.vue'
 
-let { getList,findAiAnalysisMsgAudits,synchMsg,buildAISessionWarning,findIYqueMsgRules,del,saveOrUpdateMsgRule,batchStartOrStop} = {}
+let { getList,findAiAnalysisMsgAudits,synchMsg,buildAISessionWarning,findYjaiscrmMsgRules,del,saveOrUpdateMsgRule,batchStartOrStop} = {}
 
 export default {
 	data() {
 		// let isLink = location.href.includes('customerLink')
-		let _ = ({ getList,findAiAnalysisMsgAudits,synchMsg,buildAISessionWarning,findIYqueMsgRules,del,saveOrUpdateMsgRule,batchStartOrStop} = api)
+		let _ = ({ getList,findAiAnalysisMsgAudits,synchMsg,buildAISessionWarning,findYjaiscrmMsgRules,del,saveOrUpdateMsgRule,batchStartOrStop} = api)
 
 		return {
 			activeName: 'first',
@@ -73,7 +73,7 @@ export default {
 		this.getList()
 		this.getData()
 		this.findAiAnalysisMsgAudits()
-		this.findIYqueMsgRules()
+		this.findYjaiscrmMsgRules()
 	},
 	mounted() {},
 	methods: {
@@ -106,7 +106,7 @@ export default {
 					this.$store.loading = true
 					return del(ids).then((res) => {
 						this.msgSuccess('删除成功')
-						this.findIYqueMsgRules()
+						this.findYjaiscrmMsgRules()
 					})
 				})
 				.catch((e) => {
@@ -134,7 +134,7 @@ export default {
 				.finally(() => (this.$store.loading = false))
 		},
 
-		findIYqueMsgRules(page) {
+		findYjaiscrmMsgRules(page) {
 			if(page == null){
 				page=this.aiRuleParm;
 			}
@@ -142,7 +142,7 @@ export default {
 			this.$store.loading = true
 		    console.log(page);
 			
-			findIYqueMsgRules(page)
+			findYjaiscrmMsgRules(page)
 				.then(({ data, count }) => {
 					this.aiRuleList = data
 					this.aiRuleTotal = +count
@@ -159,7 +159,7 @@ export default {
 				.submit()
 				.then(() => {
 					this.dialogVisible = false
-					return this.findIYqueMsgRules()
+					return this.findYjaiscrmMsgRules()
 				})
 				.catch((e) => console.error(e))
 				.finally(() => (this.loading = false))
@@ -236,7 +236,7 @@ export default {
 			}
 
 	
-			 this.findIYqueMsgRules(queryParm)
+			 this.findYjaiscrmMsgRules(queryParm)
 		},
 
 		restting() {
@@ -296,7 +296,7 @@ export default {
 						this.multipleSelection?.join?.(',')
 					).then((res) => {
 						this.msgSuccess('操作成功')
-						this.findIYqueMsgRules()
+						this.findYjaiscrmMsgRules()
 					})
 				})
 				.catch((e) => {
@@ -309,9 +309,9 @@ export default {
 <template>
 	<div>
 		<div class="warning">
-			<a href="https://www.iyque.cn?utm_source=iyquecode" target="_blank">
+			<a href="https://www.yjaiscrm.cn?utm_source=yjaiscrmcode" target="_blank">
 				<strong>
-					源雀Scrm-是基于Java源码交付的企微SCRM,帮助企业构建高度自由安全的私域平台。:https://www.iyque.cn/
+					yjaiscrm Scrm-是基于Java源码交付的企微SCRM,帮助企业构建高度自由安全的私域平台。:https://www.yjaiscrm.cn/
 				</strong>
 			</a>
 		</div>

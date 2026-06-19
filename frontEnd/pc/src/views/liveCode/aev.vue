@@ -78,13 +78,13 @@ import * as apiLink from './apiLink'
 import { getUserList, getTagList, getRemarkList } from '@/api/common'
 import { dictMsgType } from '@/utils/index'
 
-let { findIYqueMsgAnnexByMsgId, findIYqueMsgPeriodAnnexByMsgId, add, update } = {}
+let { findYjaiscrmMsgAnnexByMsgId, findYjaiscrmMsgPeriodAnnexByMsgId, add, update } = {}
 
 export default {
 	props: { data: {} },
 	data() {
 		let isLink = location.href.includes('customerLink')
-		let _ = ({ findIYqueMsgAnnexByMsgId, findIYqueMsgPeriodAnnexByMsgId, add, update } = isLink ? apiLink : api)
+		let _ = ({ findYjaiscrmMsgAnnexByMsgId, findYjaiscrmMsgPeriodAnnexByMsgId, add, update } = isLink ? apiLink : api)
 		return {
 			rules: {
 				codeName: [{ required: true, message: '请输入活码名称', trigger: 'blur' }],
@@ -220,12 +220,12 @@ export default {
 
 		/** 获取详情 */
 		getDetail(id) {
-			findIYqueMsgAnnexByMsgId(id).then((res) => {
+			findYjaiscrmMsgAnnexByMsgId(id).then((res) => {
 				console.log(res.data)
 				this.form.annexLists = res.data
 			})
 			this.form.startPeriodAnnex &&
-				findIYqueMsgPeriodAnnexByMsgId(id).then((res) => {
+				findYjaiscrmMsgPeriodAnnexByMsgId(id).then((res) => {
 					console.log(res.data)
 					this.form.periodAnnexLists = res.data
 				})

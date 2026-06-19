@@ -30,7 +30,7 @@
       </div>
       <div class="ai-chat-sidebar" :class="{ 'sidebar-open': showSidebar }">
         <div class="sidebar-header">
-          <h4>源雀SCRM</h4>
+          <h4>yjaiscrm SCRM</h4>
           <button class="new-chat-button sidebar-new-chat" @click="createNewChat">+ 新会话</button>
         </div>
         <div class="sidebar-body">
@@ -248,7 +248,7 @@ const tempInput = ref('')
 const watermarks = ref([])
 
 const generateWatermarks = () => {
-  const watermarkTexts = ['源雀SCRM']
+  const watermarkTexts = ['yjaiscrm SCRM']
   const count = 8
   const newWatermarks = []
   const usedPositions = []

@@ -1,6 +1,6 @@
 import request from '@/utils/request'
 const { get, post, put, delt } = request
-const serve = '/iYqueUser'
+const serve = '/yjaiscrmUser'
 
 /**
  * 列表
@@ -11,7 +11,7 @@ const serve = '/iYqueUser'
   type:''
  }
  */
-export const getList = (data) => get(`${serve}/findIYqueUserPage`, data)
+export const getList = (data) => get(`${serve}/findYjaiscrmUserPage`, data)
 
 
 
@@ -19,5 +19,5 @@ export const getList = (data) => get(`${serve}/findIYqueUserPage`, data)
  * 成员同步
  * @returns 
  */
-export const synchIyqueUser = () => post(`${serve}/synchIyqueUser`)
+export const synchYjaiscrmUser = () => post(`${serve}/synchYjaiscrmUser`)
 

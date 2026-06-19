@@ -172,12 +172,12 @@ export default {
 
 		/** 获取详情 */
 		getDetail(id) {
-			// findIYqueMsgAnnexByMsgId(id).then((res) => {
+			// findYjaiscrmMsgAnnexByMsgId(id).then((res) => {
 			// 	console.log(res.data)
 			// 	this.form.annexLists = res.data
 			// })
 			// this.form.startPeriodAnnex &&
-			// 	findIYqueMsgPeriodAnnexByMsgId(id).then((res) => {
+			// 	findYjaiscrmMsgPeriodAnnexByMsgId(id).then((res) => {
 			// 		console.log(res.data)
 			// 		this.form.periodAnnexLists = res.data
 			// 	})

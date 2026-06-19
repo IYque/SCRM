@@ -8,12 +8,12 @@ const service = '/groupMsg'
 tplName,string,true,,false,模版名称
 status,string,true,,false,状态(1:启用；0:停用)
  */
-export const getList = (data) => get(`${service}/findIYqueGroupMsgPage`, data)
+export const getList = (data) => get(`${service}/findYjaiscrmGroupMsgPage`, data)
 
 /** 详情
  * @param {*} params
  */
-export const getDetail = (id) => get(`${service}/findIYqueGroupMsgById/${id}`)
+export const getDetail = (id) => get(`${service}/findYjaiscrmGroupMsgById/${id}`)
 
 /** 删除
  * @param {*} ids

@@ -5,7 +5,7 @@ import request from '@/utils/request'
  */
 export const getList = (params) => {
   return request({
-    url: '/iYqueSessionInterceptRule/findAll',
+    url: '/yjaiscrmSessionInterceptRule/findAll',
     method: 'get',
     params,
   })
@@ -16,7 +16,7 @@ export const getList = (params) => {
  */
 export const saveOrUpdate = (data) => {
   return request({
-    url: '/iYqueSessionInterceptRule/saveOrUpdate',
+    url: '/yjaiscrmSessionInterceptRule/saveOrUpdate',
     method: 'post',
     data,
   })
@@ -27,7 +27,7 @@ export const saveOrUpdate = (data) => {
  */
 export const del = (id) => {
   return request({
-    url: `/iYqueSessionInterceptRule/${id}`,
+    url: `/yjaiscrmSessionInterceptRule/${id}`,
     method: 'delete',
   })
 }
@@ -37,7 +37,7 @@ export const del = (id) => {
  */
 export const batchDelete = (ids) => {
   return request({
-    url: `/iYqueSessionInterceptRule/batchDelete/${ids}`,
+    url: `/yjaiscrmSessionInterceptRule/batchDelete/${ids}`,
     method: 'delete',
   })
 }
@@ -47,7 +47,7 @@ export const batchDelete = (ids) => {
  */
 export const getById = (id) => {
   return request({
-    url: `/iYqueSessionInterceptRule/${id}`,
+    url: `/yjaiscrmSessionInterceptRule/${id}`,
     method: 'get',
   })
 }
@@ -57,7 +57,7 @@ export const getById = (id) => {
  */
 export const getStaffList = () => {
   return request({
-    url: '/iYqueUser/findIYqueUser',
+    url: '/yjaiscrmUser/findYjaiscrmUser',
     method: 'get'
   }).then((res) => {
     if (res.code == 200) {

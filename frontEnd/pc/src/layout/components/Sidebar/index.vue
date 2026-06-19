@@ -26,7 +26,7 @@
             :base-path="resolvePath(route.path, item)" />
         </div>
       </el-scrollbar>
-      <a href="https://iyque.cn/">
+      <a href="https://yjaiscrm.cn/">
         <el-image style="width: 100%" :src="image" fit="fill"></el-image>
       </a>
     </el-menu>

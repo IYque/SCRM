@@ -1,6 +1,6 @@
 import request from '@/utils/request'
 const { get, post, put, delt } = request
-const serve = '/iyQue/shortLink'
+const serve = '/yjaiscrm/shortLink'
 
 /**
  * 列表
@@ -11,10 +11,10 @@ const serve = '/iyQue/shortLink'
  type:''
  }
  */
-export const getList = (data) => get(`${serve}/findIYqueShortLink`, data)
+export const getList = (data) => get(`${serve}/findYjaiscrmShortLink`, data)
 
 // 详情
-export const getDetail = (id) => get(`${serve}/findIYqueUserCode/${id}`)
+export const getDetail = (id) => get(`${serve}/findYjaiscrmUserCode/${id}`)
 
 // 删除
 export const del = (ids) => delt(`${serve}/${ids}`)
@@ -46,11 +46,11 @@ export function update(data) {
     return put(`${serve}/update`, data)
 }
 
-export const findIYqueMsgAnnexByMsgId = (id) => get(`${serve}/findIYqueMsgAnnexByMsgId/${id}`)
-export const findIYqueMsgPeriodAnnexByMsgId = (id) => get(`${serve}/findIYqueMsgPeriodAnnexByMsgId/${id}`)
+export const findYjaiscrmMsgAnnexByMsgId = (id) => get(`${serve}/findYjaiscrmMsgAnnexByMsgId/${id}`)
+export const findYjaiscrmMsgPeriodAnnexByMsgId = (id) => get(`${serve}/findYjaiscrmMsgPeriodAnnexByMsgId/${id}`)
 
 //获取所有活码id与name
-export const findIYqueUserCodeKvs = () => get(`${serve}/findIYqueUserCodeKvs`)
+export const findYjaiscrmUserCodeKvs = () => get(`${serve}/findYjaiscrmUserCodeKvs`)
 
 export const countTotalTab = (data) => get(`${serve}/countTotalTab`, data)
 
@@ -79,20 +79,20 @@ export const getShortLinkConfigIds = () => get(`${serve}/getShortLinkConfigIds`)
  * 同步员工活码（联系我配置）
  * @returns
  */
-export const synchUserCode = () => post(`/iyQue/userCode/synchUserCode`)
+export const synchUserCode = () => post(`/yjaiscrm/userCode/synchUserCode`)
 
 /**
  * 同步指定的员工活码配置
  * @param {string} configIds 配置ID列表，用逗号分隔
  * @returns
  */
-export const synchUserCodeByConfigIds = (configIds) => post(`/iyQue/userCode/synchUserCodeByConfigIds`, null, { params: { configIds } })
+export const synchUserCodeByConfigIds = (configIds) => post(`/yjaiscrm/userCode/synchUserCodeByConfigIds`, null, { params: { configIds } })
 
 /**
  * 获取所有员工活码的configId列表
  * @returns
  */
-export const getUserCodeConfigIds = () => get(`/iyQue/userCode/getUserCodeConfigIds`)
+export const getUserCodeConfigIds = () => get(`/yjaiscrm/userCode/getUserCodeConfigIds`)
 
 /**
  * 获取获客链接的客户列表

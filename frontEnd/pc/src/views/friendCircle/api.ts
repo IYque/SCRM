@@ -3,7 +3,7 @@ import request from '@/utils/request'
 // 朋友圈列表
 export function getFriendCircleList(params: any) {
   return request({
-    url: '/iYqueSys/friendCircle/list',
+    url: '/yjaiscrmSys/friendCircle/list',
     method: 'get',
     params
   })
@@ -12,7 +12,7 @@ export function getFriendCircleList(params: any) {
 // 新增朋友圈
 export function createFriendCircle(data: any) {
   return request({
-    url: '/iYqueSys/friendCircle/create',
+    url: '/yjaiscrmSys/friendCircle/create',
     method: 'post',
     data
   })
@@ -21,7 +21,7 @@ export function createFriendCircle(data: any) {
 // 获取朋友圈详情
 export function getFriendCircleDetail(id: string) {
   return request({
-    url: `/iYqueSys/friendCircle/detail/${id}`,
+    url: `/yjaiscrmSys/friendCircle/detail/${id}`,
     method: 'get'
   })
 }
@@ -29,7 +29,7 @@ export function getFriendCircleDetail(id: string) {
 // 删除朋友圈
 export function deleteFriendCircle(id: string) {
   return request({
-    url: `/iYqueSys/friendCircle/${id}`,
+    url: `/yjaiscrmSys/friendCircle/${id}`,
     method: 'delete'
   })
 }
@@ -37,7 +37,7 @@ export function deleteFriendCircle(id: string) {
 // 更新朋友圈
 export function updateFriendCircle(data: any) {
   return request({
-    url: '/iYqueSys/friendCircle/update',
+    url: '/yjaiscrmSys/friendCircle/update',
     method: 'put',
     data
   })
@@ -46,7 +46,7 @@ export function updateFriendCircle(data: any) {
 // AI生成朋友圈内容
 export function aiGenerateFriendCircle(prompt: string, modelName?: string) {
   return request({
-    url: '/iYqueSys/friendCircle/ai/generate',
+    url: '/yjaiscrmSys/friendCircle/ai/generate',
     method: 'get',
     params: { prompt, modelName }
   })

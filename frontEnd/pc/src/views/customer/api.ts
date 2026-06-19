@@ -5,7 +5,7 @@ import request from '@/utils/request'
 const { get, post, put, delt: _del } = request
 
 const service = '/customerInfo'
-const tagService = '/iYqueTag'
+const tagService = '/yjaiscrmTag'
 
 // 定义API响应类型
 interface ApiResponse<T = any> {
@@ -49,7 +49,7 @@ export const synchCustomer = (data?: any): Promise<ApiResponse> => post(`${servi
 /** 获取客户标签列表
  * @returns
  */
-export const getCustomerTags = (data?: any): Promise<ApiResponse<CustomerTag[]>> => get(`${tagService}/findIYqueTag`, data)
+export const getCustomerTags = (data?: any): Promise<ApiResponse<CustomerTag[]>> => get(`${tagService}/findYjaiscrmTag`, data)
 
 /** 为客户打标签
  * @param {*} params

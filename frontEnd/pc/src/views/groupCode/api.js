@@ -11,10 +11,10 @@ const serve = '/iychatCode'
   type:''
  }
  */
-export const getList = (data) => get(`${serve}/findIYqueChatCode`, data)
+export const getList = (data) => get(`${serve}/findYjaiscrmChatCode`, data)
 
 // 详情
-// export const getDetail = (id) => get(`${serve}/findIYqueUserCode/${id}`)
+// export const getDetail = (id) => get(`${serve}/findYjaiscrmUserCode/${id}`)
 
 // // 删除
 export const del = (ids) => delt(`${serve}/${ids}`)
@@ -45,4 +45,4 @@ export function update(data) {
 }
 
 //获取企业微信群
-export const getGroupList = () => get(`${serve}/findIYqueChat`)
+export const getGroupList = () => get(`${serve}/findYjaiscrmChat`)

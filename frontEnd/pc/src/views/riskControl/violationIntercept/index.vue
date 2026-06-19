@@ -310,8 +310,8 @@ export default {
     color: #666;
   }
   
-  // 源雀SCRM广告横幅样式
-  .iyque-ad-banner {
+  // yjaiscrm SCRM广告横幅样式
+  .yjaiscrm-ad-banner {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     padding: 12px 0;

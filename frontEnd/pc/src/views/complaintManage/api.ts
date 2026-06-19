@@ -1,7 +1,7 @@
 import request from '@/utils/request'
 const { get, post, put, delt: _del } = request
 
-const service = '/iYqueComplaint'
+const service = '/yjaiscrmComplaint'
 
 /** 列表
  * @param {*} params
@@ -23,15 +23,15 @@ export const distributeHandle = (id) => get(`${service}/distributeHandle/${id}`)
     }
 ]
  */
-export const setIYQueComplaintTip = (data) => {
-  return post(`${service}/setIYQueComplaintTip`, data)
+export const setYjaiscrmComplaintTip = (data) => {
+  return post(`${service}/setYjaiscrmComplaintTip`, data)
 }
 
 /**
  * 获取投诉通知人
  * @returns
  */
-export const findIYQueComplaintTips = () => get(`${service}/findIYQueComplaintTips`)
+export const findYjaiscrmComplaintTips = () => get(`${service}/findYjaiscrmComplaintTips`)
 
 /** 删除
  * @param {*} ids

@@ -5,7 +5,7 @@ const service = '/category'
 
 /** 列表
  */
-export const getList = (data) => get(`${service}/findIYqueCategory`, data)
+export const getList = (data) => get(`${service}/findYjaiscrmCategory`, data)
 
 /** 详情
  * @param {*} params

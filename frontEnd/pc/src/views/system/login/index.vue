@@ -16,17 +16,17 @@
           <!-- <span v-html="sysConfig.SYSTEM_SLOGAN"></span> -->
         </div>
         <div class="leading-[40px]">
-          源雀SCRM是基于源码100%开放策略的企业微信SCRM，从源头解决了企业私域建设核心痛点，实现高自由度、高私有化及高安全性。系统具备四大优势：
+          yjaiscrm SCRM是基于源码100%开放策略的企业微信SCRM，从源头解决了企业私域建设核心痛点，实现高自由度、高私有化及高安全性。系统具备四大优势：
           <ul>
             <li class="!list-disc !list-inside !pl-[30px]">系统高度可用，部署灵活高效</li>
             <li class="!list-disc !list-inside !pl-[30px]">研发降本增效，满足定制需求</li>
             <li class="!list-disc !list-inside !pl-[30px]">数据安全可控，自主知识产权</li>
             <li class="!list-disc !list-inside !pl-[30px]">降低云服务依赖与供应商绑定</li>
           </ul>
-          同时源雀积极拥抱开源，同步推出完全开源、免费使用AI开源版，结合DeepSeek等AI大模型，让企业快速拥有更强大、更丰富、更智能的企业微信管理能力。
+          同时yjaiscrm积极拥抱开源，同步推出完全开源、免费使用AI开源版，结合DeepSeek等AI大模型，让企业快速拥有更强大、更丰富、更智能的企业微信管理能力。
         </div>
         <div class="--Color bold font16 mt20">
-          <a href="https://www.iyque.cn?utm_source=iyquecode" target="_blank">立即了解源雀SCRM →</a>
+          <a href="https://www.yjaiscrm.cn?utm_source=yjaiscrmcode" target="_blank">立即了解yjaiscrm SCRM →</a>
         </div>
       </div>
       <div class="w-[50%] bg-(--BgWhite) relative">

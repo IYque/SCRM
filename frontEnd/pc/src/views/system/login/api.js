@@ -1,6 +1,6 @@
 import request from '@/utils/request'
 const { get, post, put, del: _del } = request
-const serve = '/iYqueSys'
+const serve = '/yjaiscrmSys'
 
 export const login = (data) => post(`${serve}/login`, data)
 /**

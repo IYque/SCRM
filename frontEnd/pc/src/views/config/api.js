@@ -1,12 +1,12 @@
 import request from '@/utils/request'
 const { get, post, put, delt } = request
-const serve = '/iYqueConfig'
+const serve = '/yjaiscrmConfig'
 
-export const getDetail = (id) => get(`${serve}/findIYqueConfig`)
+export const getDetail = (id) => get(`${serve}/findYjaiscrmConfig`)
 
 export const addOrUpdate = (data) => post(`${serve}/saveOrUpdate`, data)
 
-const serveWel = '/iYqueDefaultMsg'
+const serveWel = '/yjaiscrmDefaultMsg'
 export const getDetailWel = (id) => get(`${serveWel}/findDefaultMsg`)
 
 /**

@@ -8,7 +8,7 @@ const service = '/hotWord'
 tplName,string,true,,false,模版名称
 status,string,true,,false,状态(1:启用；0:停用)
  */
-export const getList = (data) => get(`${service}/findIYqueHotWord`, data)
+export const getList = (data) => get(`${service}/findYjaiscrmHotWord`, data)
 
 /** 详情
  * @param {*} params

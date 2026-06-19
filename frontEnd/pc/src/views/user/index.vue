@@ -1,12 +1,12 @@
 <script>
 import * as api from './api'
 import { env } from '../../../sys.config'
-let { getList,synchIyqueUser} = {}
+let { getList,synchYjaiscrmUser} = {}
 
 export default {
 	data() {
 		// let isLink = location.href.includes('customerLink')
-		let _ = ({ getList,synchIyqueUser} = api)
+		let _ = ({ getList,synchYjaiscrmUser} = api)
 
 		return {
 			activeName: 'first',
@@ -67,7 +67,7 @@ export default {
 
 
 		synchUser() {
-            synchIyqueUser()
+            synchYjaiscrmUser()
 			 .then(response => {
 			
 				this.msgSuccess(response.msg)
@@ -109,9 +109,9 @@ export default {
 <template>
 	<div>
 		<div class="warning">
-			<a href="https://www.iyque.cn?utm_source=iyquecode" target="_blank">
+			<a href="https://www.yjaiscrm.cn?utm_source=yjaiscrmcode" target="_blank">
 				<strong>
-					源雀Scrm-是基于Java源码交付的企微SCRM,帮助企业构建高度自由安全的私域平台。:https://www.iyque.cn/
+					yjaiscrm Scrm-是基于Java源码交付的企微SCRM,帮助企业构建高度自由安全的私域平台。:https://www.yjaiscrm.cn/
 				</strong>
 			</a>
 		</div>

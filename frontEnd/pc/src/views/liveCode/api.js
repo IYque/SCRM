@@ -1,6 +1,6 @@
 import request from '@/utils/request'
 const { get, post, put, delt } = request
-const serve = '/iyQue'
+const serve = '/yjaiscrm'
 
 /**
  * 列表
@@ -11,10 +11,10 @@ const serve = '/iyQue'
  type:''
  }
  */
-export const getList = (data) => get(`${serve}/findIYqueUserCode`, data)
+export const getList = (data) => get(`${serve}/findYjaiscrmUserCode`, data)
 
 // 详情
-export const getDetail = (id) => get(`${serve}/findIYqueUserCode/${id}`)
+export const getDetail = (id) => get(`${serve}/findYjaiscrmUserCode/${id}`)
 
 // 删除
 export const del = (ids) => delt(`${serve}/${ids}`)
@@ -48,11 +48,11 @@ export function update(data) {
     return put(`${serve}/update`, data)
 }
 
-export const findIYqueMsgAnnexByMsgId = (id) => get(`/iyQue/findIYqueMsgAnnexByMsgId/${id}`)
-export const findIYqueMsgPeriodAnnexByMsgId = (id) => get(`/iyQue/findIYqueMsgPeriodAnnexByMsgId/${id}`)
+export const findYjaiscrmMsgAnnexByMsgId = (id) => get(`/yjaiscrm/findYjaiscrmMsgAnnexByMsgId/${id}`)
+export const findYjaiscrmMsgPeriodAnnexByMsgId = (id) => get(`/yjaiscrm/findYjaiscrmMsgPeriodAnnexByMsgId/${id}`)
 
 //获取所有活码id与name
-export const findIYqueUserCodeKvs = () => get(`${serve}/findIYqueUserCodeKvs`)
+export const findYjaiscrmUserCodeKvs = () => get(`${serve}/findYjaiscrmUserCodeKvs`)
 
 export const countTotalTab = (data) => get(`${serve}/countTotalTab`, data)
 

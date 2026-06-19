@@ -2,12 +2,12 @@
 import * as api from './api'
 import { env } from '../../../sys.config'
 import TagEllipsis from '@/components/TagEllipsis'
-let { getList,synchIyqueChat, getGroupTags, tagGroups} = {}
+let { getList,synchYjaiscrmChat, getGroupTags, tagGroups} = {}
 
 export default {
 	data() {
 		// let isLink = location.href.includes('customerLink')
-		let _ = ({ getList,synchIyqueChat, getGroupTags, tagGroups} = api)
+		let _ = ({ getList,synchYjaiscrmChat, getGroupTags, tagGroups} = api)
 
 		return {
 			activeName: 'first',
@@ -73,8 +73,8 @@ export default {
 
 
 
-		synchIyqueChat() {
-            synchIyqueChat()
+		synchYjaiscrmChat() {
+            synchYjaiscrmChat()
 			 .then(response => {
 			
 				this.msgSuccess(response.msg)
@@ -188,9 +188,9 @@ export default {
 <template>
 	<div>
 		<div class="warning">
-			<a href="https://www.iyque.cn?utm_source=iyquecode" target="_blank">
+			<a href="https://www.yjaiscrm.cn?utm_source=yjaiscrmcode" target="_blank">
 				<strong>
-					源雀Scrm-是基于Java源码交付的企微SCRM,帮助企业构建高度自由安全的私域平台。:https://www.iyque.cn/
+					yjaiscrm Scrm-是基于Java源码交付的企微SCRM,帮助企业构建高度自由安全的私域平台。:https://www.yjaiscrm.cn/
 				</strong>
 			</a>
 		</div>
@@ -210,7 +210,7 @@ export default {
 				</el-form>
 					
 					<div class="fxbw">
-						<el-button type="primary" @click="synchIyqueChat()">同步客群</el-button>
+						<el-button type="primary" @click="synchYjaiscrmChat()">同步客群</el-button>
 					</div>
 					<el-table
 					:data="list"

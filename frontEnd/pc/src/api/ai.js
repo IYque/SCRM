@@ -2,7 +2,7 @@ import request from '@/utils/request'
 
 export function chatWithMemory(data) {
   return request({
-    url: '/iYqueAi/chatWithMemory',
+    url: '/yjaiscrmAi/chatWithMemory',
     method: 'post',
     data
   })
@@ -10,20 +10,20 @@ export function chatWithMemory(data) {
 
 export function getAvailableModels() {
   return request({
-    url: '/iYqueAi/models',
+    url: '/yjaiscrmAi/models',
     method: 'get'
   })
 }
 
 export function getFunctionRoutes() {
   return request({
-    url: '/iYqueAi/functionRoutes',
+    url: '/yjaiscrmAi/functionRoutes',
     method: 'get'
   })
 }
 
 export function chatWithMemoryStream(data, onMessage, onError, onComplete) {
-  const url = '/api/iYqueAi/chatWithMemoryStream'
+  const url = '/api/yjaiscrmAi/chatWithMemoryStream'
   
   return new Promise((resolve, reject) => {
     let fullResponse = ''
@@ -166,7 +166,7 @@ export function chatWithMemoryStream(data, onMessage, onError, onComplete) {
 }
 
 export function navigationChatStream(data, onMessage, onError, onComplete) {
-  const url = '/api/iYqueAi/navigationChatStream'
+  const url = '/api/yjaiscrmAi/navigationChatStream'
   
   return new Promise((resolve, reject) => {
     let fullResponse = ''

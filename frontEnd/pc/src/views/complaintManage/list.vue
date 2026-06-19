@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getList, setIYQueComplaintTip, distributeHandle, updateStatus, findIYQueComplaintTips } from './api'
+import { getList, setYjaiscrmComplaintTip, distributeHandle, updateStatus, findYjaiscrmComplaintTips } from './api'
 const handleState = { '1': '未处理', '2': '已处理' }
 
 const employees = ref([])
@@ -14,7 +14,7 @@ const selectedEmployeeName = computed(() => {
 })
 onMounted(async () => {
   try {
-    const response = await findIYQueComplaintTips()
+    const response = await findYjaiscrmComplaintTips()
     if (response.data && Array.isArray(response.data)) {
       const userNames = response.data
         .filter((item) => item && typeof item.userName === 'string')
@@ -52,7 +52,7 @@ onMounted(async () => {
           :formProps="{ 'label-width': 'auto' }"
           :rules="{ users: { required: true, message: '必选项', trigger: 'change' } }"
           @confirm="
-            () => $refs.dialogRef.confirm(() => setIYQueComplaintTip(form.users?.map((e) => ({ userId: e.userId }))))
+            () => $refs.dialogRef.confirm(() => setYjaiscrmComplaintTip(form.users?.map((e) => ({ userId: e.userId }))))
           ">
           <template #form="{}">
             <el-form-item prop="users" class="w100" label="投诉处理人">
